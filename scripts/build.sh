@@ -1,5 +1,6 @@
 
 npm run lint \
+&& npm run smoke \
 && npm run lines \
 && npm run cover \
 && npm run bundle \
