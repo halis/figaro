@@ -21,5 +21,5 @@ COPY src/server src/server
 COPY public public
 COPY scripts/start.sh scripts/start.sh
 
-EXPOSE 3000
+EXPOSE 1337
 ENTRYPOINT ["npm", "start"]
