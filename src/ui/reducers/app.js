@@ -2,9 +2,9 @@
 import R from 'ramda';
 
 const getSelectedItem = () => {
-  if (window.location.href.endsWith('/data')) return 'data';
-  if (window.location.href.endsWith('/api')) return 'api';
-  if (window.location.href.endsWith('/ui')) return 'ui';
+  if (window.location.href.endsWith('/data-builder')) return 'data';
+  if (window.location.href.endsWith('/api-builder')) return 'api';
+  if (window.location.href.endsWith('/ui-builder')) return 'ui';
   return 'home';
 };
 

@@ -1,7 +1,7 @@
 
 import React from 'react';
 import Main from 'ui/components/Main';
-import Page from '../page';
+import Page from 'ui/components/Page';
 
 const ApiBuilder = () => {
   Page('Api Builder');

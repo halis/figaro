@@ -8,12 +8,13 @@ import {
   BrowserRouter as Router,
   Route,
 } from 'react-router-dom';
-import appReducer from 'ui/reducers/index';
+import appReducer from 'ui/reducers/';
 import Home from 'ui/components/Home';
-import DataBuilder from 'ui/pages/data';
-import ApiBuilder from 'ui/pages/api';
-import UIBuilder from 'ui/pages/ui';
+import DataBuilder from 'ui/components/DataBuilder';
+import ApiBuilder from 'ui/components/ApiBuilder';
+import UIBuilder from 'ui/components/UIBuilder';
 import ConnectedMenu from './components/Menu';
+import CreateEntity from './components/DataBuilder/CreateEntity';
 
 const rootReducer = (state, action) => appReducer(state, action);
 
@@ -26,9 +27,10 @@ render(
       <div>
         <ConnectedMenu />
         <Route exact path="/" component={Home} />
-        <Route path="/data" component={DataBuilder} />
-        <Route path="/api" component={ApiBuilder} />
-        <Route path="/ui" component={UIBuilder} />
+        <Route path="/data-builder" component={DataBuilder} />
+        <Route path="/api-builder" component={ApiBuilder} />
+        <Route path="/ui-builder" component={UIBuilder} />
+        <Route path="/create-entity" component={CreateEntity} />
       </div>
     </Router>
   </Provider>,

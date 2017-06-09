@@ -8,7 +8,6 @@ export class Menu extends PureComponent {
   render() {
     const handleLink = linkName => (e) => {
       this.props.menuClick(linkName);
-      // e.preventDefault();
       e.stopPropagation();
       return false;
     };
@@ -22,13 +21,13 @@ export class Menu extends PureComponent {
               <Link className="pure-menu-link" to="/" onClick={handleLink(('home'))}>Home</Link>
             </li>
             <li className={`pure-menu-item${this.props.selectedMenuItem === 'data' ? ' pure-menu-selected' : ''}`}>
-              <Link className="pure-menu-link" to="/data" onClick={handleLink(('data'))}>Data Builder</Link>
+              <Link className="pure-menu-link" to="/data-builder" onClick={handleLink(('data'))}>Data Builder</Link>
             </li>
             <li className={`pure-menu-item${this.props.selectedMenuItem === 'api' ? ' pure-menu-selected' : ''}`}>
-              <Link className="pure-menu-link" to="/api" onClick={handleLink(('api'))}>Api Builder</Link>
+              <Link className="pure-menu-link" to="/api-builder" onClick={handleLink(('api'))}>Api Builder</Link>
             </li>
             <li className={`pure-menu-item${this.props.selectedMenuItem === 'ui' ? ' pure-menu-selected' : ''}`}>
-              <Link className="pure-menu-link" to="/ui" onClick={handleLink(('ui'))}>UI Builder</Link>
+              <Link className="pure-menu-link" to="/ui-builder" onClick={handleLink(('ui'))}>UI Builder</Link>
             </li>
           </ul>
         </div>
