@@ -17,7 +17,8 @@
     "react/prop-types": 0
   },
   "globals": {
-    "expect": true
+    "expect": true,
+    "mount": true
   },
   "env": {
     "mocha": true,

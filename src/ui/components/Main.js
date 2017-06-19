@@ -5,7 +5,7 @@ import Footer from './Footer';
 export default class Main extends React.PureComponent {
   render() {
     return (
-      <div id="main">
+      <div className="main">
         {this.props.children}
         <Footer />
       </div>
