@@ -15,6 +15,7 @@ import ApiBuilder from 'ui/components/ApiBuilder';
 import UIBuilder from 'ui/components/UIBuilder';
 import ConnectedMenu from './components/Menu';
 import CreateEntity from './components/DataBuilder/CreateEntity';
+import EditEntity from './components/DataBuilder/EditEntity';
 
 const rootReducer = (state, action) => appReducer(state, action);
 
@@ -31,6 +32,7 @@ render(
         <Route path="/api-builder" component={ApiBuilder} />
         <Route path="/ui-builder" component={UIBuilder} />
         <Route path="/create-entity" component={CreateEntity} />
+        <Route path="/edit-entity/:entityName" component={EditEntity} />
       </div>
     </Router>
   </Provider>,
