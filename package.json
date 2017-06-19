@@ -4,6 +4,7 @@
   "description": "Throw it all against the wall to see what sticks.",
   "scripts": {
     "start": "./scripts/start.sh",
+    "startw": "./scripts/startw.sh",
     "dev": "./scripts/dev.sh",
     "test": "cashmere",
     "test:watch": "./scripts/testwatch.sh",
